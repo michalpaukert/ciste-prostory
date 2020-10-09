@@ -6,6 +6,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-sass`,
+    `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -29,11 +30,11 @@ module.exports = {
       },
     },
     {
-      resolve: '@kentico/gatsby-source-kontent',
+      resolve: "@kentico/gatsby-source-kontent",
       options: {
-        projectId: '578ff6c2-4bd7-00e6-ff5b-8be5749df64d', // Fill in your Project ID
+        projectId: "578ff6c2-4bd7-00e6-ff5b-8be5749df64d", // Fill in your Project ID
         languageCodenames: [
-          'default', // Languages in your project (Project settings -> Localization),
+          "default", // Languages in your project (Project settings -> Localization),
         ],
       },
     },
@@ -41,4 +42,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
