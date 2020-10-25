@@ -1,13 +1,13 @@
 import * as React from "react";
 import { Layout } from "../components/layout";
-import { SEO } from "../components/seo";
-import { Link } from "gatsby";
+import { MetaTags } from "../components/metaTags";
+import { Navbar } from "../components/Header/Navbar";
 
 export const IndexPage: React.FC = () => {
   return (
     <Layout>
-      <SEO title="Home" />
-      <Link to={"/clanky"}>Clanky</Link>
+      <MetaTags title="Home" />
+      <Navbar />
     </Layout>
   );
 };

@@ -1,0 +1,29 @@
+.navbar {
+  background-image: url('../../../static/images/header_.png');
+  padding-bottom: 50px;
+  background-repeat: no-repeat;
+  background-size: 100% 56%;
+  background-color: #f4f4f5;
+
+  &__menu {
+    color: #fff;
+    font-size: 20px;
+
+    &:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    &--contact {
+      border-radius: 5px;
+      padding: 2px;
+      border: 1px solid;
+    }
+  }
+
+  &__burger-menu {
+    background-image: url('../../../static/images/menu.png');
+    width: 45%;
+    height: auto;
+  }
+}

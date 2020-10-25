@@ -2030,6 +2030,11 @@
   resolved "https://registry.yarnpkg.com/@types/tmp/-/tmp-0.0.33.tgz#1073c4bc824754ae3d10cfab88ab0237ba964e4d"
   integrity sha1-EHPEvIJHVK49EM+riKsCN7qWTk0=
 
+"@types/uikit@^3.3.1":
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/@types/uikit/-/uikit-3.3.1.tgz#97c817d803aa7c3b4d0c7e8c2b50177c415845b8"
+  integrity sha512-8+Ejdntc9yMBkSyp1OhQv/eZotscum4EnZ53B07nqZS9H2js2CTwbBSMgjHc/EOJAntF1T4FDLJ4druM/wNhGA==
+
 "@types/unist@*", "@types/unist@^2.0.0", "@types/unist@^2.0.2", "@types/unist@^2.0.3":
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/@types/unist/-/unist-2.0.3.tgz#9c088679876f374eb5983f150d4787aa6fb32d7e"
@@ -14017,11 +14022,6 @@ typescript@^4.0.3:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.0.3.tgz#153bbd468ef07725c1df9c77e8b453f8d36abba5"
   integrity sha512-tEu6DGxGgRJPb/mVPIZ48e69xCn2yRmCgYmDugAVwmJ6o+0u1RI18eO7E7WBTLYLaEVVOhwQmcdhQHweux/WPg==
-
-uikit@^3.5.8:
-  version "3.5.8"
-  resolved "https://registry.yarnpkg.com/uikit/-/uikit-3.5.8.tgz#746a80a16c3ef2763297c7c058c423267d8eeda2"
-  integrity sha512-MzUykA+mOC74W+vtvxJUZ76YJvGM2tlBsZs0ab2ZFyZBBfqSV5xsJ5/48HVhPtuAlsdfhbP36c5OXJ38xY6Iuw==
 
 unbzip2-stream@^1.0.9:
   version "1.4.3"

@@ -1,0 +1,205 @@
+@media (max-width:959px) {
+    .header-white {
+        background-size: 265% !important;
+        background-position: center !important;
+    }
+    .navbar {
+        background-size: 100% 100% !important;    
+    }
+    .center-image {
+        height: 170px !important;
+        background-size: 100% !important;
+        background-repeat: no-repeat !important;
+    }
+    .consultation {
+        margin: 10px 10px 45%!important;
+        font-size: 14px!important;
+        padding: 10px !important;
+    }
+    .work {
+        padding: 20% 0% 68% 0% !important;
+    }
+    .page-title {
+        padding-left: 50px !important;
+        max-width: unset !important;
+    }
+    .page-title h1 {
+        font-size: 50px !important;
+        line-height: 70px !important;    
+    }
+    .page-title h2 {
+        font-size: 50px !important;
+        line-height: 70px !important;
+    }
+    .page-title.clean-space {
+        display: block !important;
+    }
+    .page-title.clean-space .clean-space-text {
+        width: 100% !important;
+    }
+    .services-card {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .services-card-resp img {
+        border-radius: 50%;
+        background-color: #00ABBB;
+    }
+    .services-card-resp h2 {
+        color: #00ABBB;
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 700;
+        margin-top: 20px;
+    }
+    .services-card-resp {
+        font-size: 14px;
+        text-align: center;
+    }
+    .services-card-resp {
+        max-width: unset !important;
+    }    
+    .services-up .card {
+        margin-right: 5px !important;
+        margin-left: 5px !important;
+        padding: 10px !important;
+    }
+    .services-down .card {
+        margin-right: 5px !important;
+        margin-left: 5px !important;
+        padding: 10px !important;
+    }
+    .services-middle .card {
+        box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2);
+        padding: 10px;
+        border-radius: 10px;
+        background: #fff;
+    }
+    .services-middle {
+        display: flex;
+        margin-bottom: 20px;
+    }   
+    .services-middle .card {
+        margin-right: 5px !important;
+        margin-left: 5px;
+    }
+    .services-card-resp img {
+        width: 60% !important;
+    }
+    .mail-tel-resp {
+        display: block !important;
+    }
+    .mail-tel-resp img {
+        width: 6% !important;
+    }
+    .address {
+        text-align: center !important;
+        padding-left: 0% !important;
+    }
+    .address span {
+        color: #fff !important;
+    }
+    .contact-us {
+        width: unset !important;
+        padding-left: 15%;
+    }
+    .contact-us .mail-tel {
+        display: none;
+    }
+    .contact-us .mail-tel-resp a {
+        font-size: 20px !important;
+        color: #fff;
+        padding-right: 25px;
+    }
+    .mail-tel-resp img {
+        border-radius: 50%;
+        background-color: #fff;
+        margin-right: 10px;
+        margin-bottom: 15px;    
+    }
+    .mail-tel-resp {
+        padding-top: 20px;
+    }
+    .footer {
+        text-align: center !important;
+        max-height: 685px !important;
+        max-width: 1000px !important;
+        overflow: hidden !important;
+    }
+    .footer-contact {
+        background-color: #00abbb;
+        padding: 48px 0px !important;
+        border-top-right-radius: 50px;
+        margin-top: -420px!important;
+        transform: rotate(-15deg);
+        padding-bottom: 500px !important;
+        width: 800px!important;
+    }
+    .clean-space {
+        padding: 20px 10px !important;
+        max-width: unset !important;
+    }
+    .menu img {
+        width: 100% !important;
+    }
+    .menu {
+        padding: 20px 20px 0px 0px !important;
+    }
+    .menu a {
+        font-size: 16px !important;
+        padding: 3px 3px 5px !important;
+    }
+    .logo {
+        padding: 20px 20px 0px 0px !important;
+    }
+    .logo img {
+        width: 90% !important;
+    }
+    .services-card-resp {
+        display: block !important;
+    }
+    .services-card {
+        display: none;
+    }
+    .page-title .clean-space-text h1 {
+        padding-top: 0 !important;
+        color: #fff !important;
+    }
+    .clean-space {
+        text-align: center !important;
+    }
+    .right-side-text {
+        padding-bottom: 20px !important;
+        max-width: 100% !important;    
+    }
+    .page-title .clean-space-text hr {
+        width: 75% !important;
+        border-top: 1px solid #fff !important;
+        margin-left: 40px !important;
+    }
+    .logo-desktop {
+        display: none;    
+    }
+    .logo-resp {
+        display: block !important;
+    }
+    .consultation h1 {
+        font-size: 20px !important;
+    }
+    .uk-button-default {
+        width: 24px;
+    }
+}
+@media (max-width:450px) {
+    .footer {
+        max-width: 430px !important;    
+    }
+    .footer-contact {
+        padding-bottom: 1105px !important;
+        width: 600px !important; 
+        margin-top: -105px !important;  
+    }
+}
+
+
