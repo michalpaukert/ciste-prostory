@@ -1,0 +1,27 @@
+.contact {
+  background-color: #00ABBB;
+
+  &__wrapper {
+    background-color: #00ABBB;
+    border-radius: 50px;
+    transform: rotate(-15deg);
+    width: 70vw;
+    margin-top: -21%;
+    padding: 15%;
+    height: 150px;
+  }
+
+  &__form {
+    transform: rotate(15deg);
+    margin: auto;
+    color: #fff;
+  }
+
+  &__form-title {
+    color: #fff;
+  }
+
+  &__divider {
+    width: 20%;
+  }
+}

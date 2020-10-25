@@ -1,0 +1,19 @@
+.header-title {
+  margin: auto;
+  color: #fff;
+
+  &__heading {
+    font-style: italic;
+    font-size: 100px;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  &__subheading {
+    font-style: italic;
+    font-size: 100px;
+    margin: 0;
+    line-height: 100px;
+    color: #fff;
+  }
+}
