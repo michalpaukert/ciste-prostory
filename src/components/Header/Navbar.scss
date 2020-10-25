@@ -5,6 +5,19 @@
   background-size: 100% 56%;
   background-color: #f4f4f5;
 
+  &__page-title {
+    margin: auto;
+    color: #fff;
+
+    &--heading {
+      color: #fff;
+    }
+
+    &--subheading {
+      color: #fff;
+    }
+  }
+
   &__menu {
     color: #fff;
     font-size: 20px;

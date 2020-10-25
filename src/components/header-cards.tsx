@@ -1,8 +1,9 @@
 import React from "react";
 import { HeaderCard } from "./header-card";
+import "./header-cards.scss";
 
 export const HeaderCards: React.FC = () => (
-  <div className="uk-container">
+  <div className="uk-container uk-container-small">
     <div
       className="uk-grid uk-grid-small"
       uk-height-match="target: > div > .uk-card"
