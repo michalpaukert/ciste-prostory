@@ -3,9 +3,9 @@ import "./Contact.scss";
 
 export const Contact: React.FC = (props) => (
   <div className="contact uk-padding uk-padding-small">
-    <div className="contact__wrapper">
-      <div className="contact__form uk-text-center">
-        <h2>Kontaktujte nas</h2>
+    <div className="contact__wrapper uk-flex uk-flex-center">
+      <div className="contact__form">
+        <h2 className="contact__form-title" >Kontaktujte nas</h2>
         <hr />
         <div className="mail-tel">
           <img src="images/mail.png" />

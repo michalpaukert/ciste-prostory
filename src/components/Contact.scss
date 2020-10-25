@@ -15,9 +15,13 @@
     transform: rotate(15deg);
     margin: auto;
     color: #fff;
+  }
 
-    hr {
-      width: 20%;
-    }
+  &__form-title {
+    color: #fff;
+  }
+
+  &__divider {
+    width: 20%;
   }
 }
