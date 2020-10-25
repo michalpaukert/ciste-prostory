@@ -1,0 +1,25 @@
+.footer {
+  overflow: hidden;
+
+  &__image {
+    background-image: url(../../../static/images/footer_.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 883px;
+
+    @media only screen and (min-width: 521px) and (max-width: 1081px) {
+      background-image: url(../../../static/images/footer__medium.png);
+      height: 634px;
+    }
+
+    @media only screen and (max-width: 520px) {
+      background-image: url(../../../static/images/footer__small.png);
+      height: 305px;
+    }
+
+    &--cta {
+
+    }
+  }
+}

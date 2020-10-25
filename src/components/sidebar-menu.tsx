@@ -1,5 +1,5 @@
 import React from "react";
-import "./header-card.scss";
+import "./Card/Card.scss";
 
 export const SidebarMenu: React.FC = (props) => (
   <div
@@ -8,8 +8,7 @@ export const SidebarMenu: React.FC = (props) => (
     className="uk-offcanvas"
   >
     <div className="uk-offcanvas-bar">
-      <img src="img/logo_prostory.png" />
-      <br />
+      <img src="images/logo_prostory.png" />
       <button
         className="uk-offcanvas-close uk-icon uk-close"
         type="button"

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Layout } from "../components/layout";
+import { Layout } from "../components/Layout/Layout";
 import { MetaTags } from "../components/metaTags";
 
 export const NotFoundPage = () => {

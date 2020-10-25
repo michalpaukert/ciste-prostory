@@ -3,7 +3,8 @@ import "./Navbar.scss";
 import { Logo } from "../Logo/Logo";
 import { SidebarMenu } from "../sidebar-menu";
 import { Link } from "gatsby";
-import { HeaderCards } from "../header-cards";
+import { Cards } from "../Card/Cards";
+import { HeaderTitle } from "./HeaderTitle";
 
 export const Navbar: React.FC = (props) => (
   <div className="navbar">
@@ -40,11 +41,8 @@ export const Navbar: React.FC = (props) => (
       </div>
     </div>
 
-    <div className="navbar__page-title uk-padding uk-padding-medium">
-      <h1 className="navbar__page-title--text uk-text-small@s">S DURAZEM</h1>
-      <h2 className="navbar__page- uk-text-small@s">na cistotu</h2>
-    </div>
+    <HeaderTitle title="S DURAZEM" subtitle="na cistotu" />
 
-    <HeaderCards />
+    <Cards />
   </div>
 );

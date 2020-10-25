@@ -9,12 +9,13 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import "./layout.scss";
+import { Footer } from "../Footer/Footer";
 
 export const Layout: React.FC = ({ children }) => {
   return (
     <>
       <main>{children}</main>
-      <footer>Footer</footer>
+      <Footer />
     </>
   );
 };
