@@ -1,14 +1,14 @@
 import * as React from "react";
 import { Layout } from "../components/Layout/Layout";
 import { MetaTags } from "../components/metaTags";
-import { Navbar } from "../components/Header/Navbar";
 import { MainArticle } from "../components/MainArticle";
+import { Header } from "../components/Header/Header";
 
 export const IndexPage: React.FC = () => {
   return (
     <Layout>
       <MetaTags title="Home" />
-      <Navbar />
+      <Header />
       <MainArticle />
     </Layout>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, ButtonType } from "../Button/Button";
 import "./Footer.scss";
-import { Contact } from "../Contact";
+import { Contact } from "./Contact";
 
 export const Footer: React.FC = (props) => (
   <div className="footer">

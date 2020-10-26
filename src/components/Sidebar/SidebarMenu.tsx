@@ -1,11 +1,13 @@
 import React from "react";
-import "./Card/Card.scss";
+import "../Card/Card.scss";
+import { Link } from "gatsby";
+import "./SidebarMenu.scss";
 
 export const SidebarMenu: React.FC = (props) => (
   <div
     id="offcanvas-flip"
     uk-offcanvas="flip: true; overlay: true"
-    className="uk-offcanvas"
+    className="sidebar uk-offcanvas"
   >
     <div className="uk-offcanvas-bar">
       <img src="images/logo_prostory.png" />
@@ -42,7 +44,14 @@ export const SidebarMenu: React.FC = (props) => (
         </svg>
       </button>
 
-      <a href="ciste-prostory.html">Ciste prostory</a>
+      <ul className="sidebar__menu uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+        <li>
+          <Link className="sidebar__menu-item" to="/">Ciste prostory</Link>
+        </li>
+        <li>
+          <Link className="sidebar__menu-item" to="/">Ciste prostory</Link>
+        </li>
+      </ul>
     </div>
   </div>
 );

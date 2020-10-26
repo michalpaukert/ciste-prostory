@@ -1,19 +1,36 @@
 .header-title {
-  margin: auto;
   color: #fff;
+  max-width: 1100px;
+  margin: auto;
+  padding-bottom: 30px;
+
+
+  @media only screen and (max-width: 1200px) {
+    margin: auto auto auto 5%;
+  }
 
   &__heading {
     font-style: italic;
     font-size: 100px;
     color: #fff;
     font-weight: 700;
+    margin: 0;
+
+    @media only screen and (max-width: 736px) {
+      font-size: 50px;
+    }
   }
+
 
   &__subheading {
     font-style: italic;
     font-size: 100px;
-    margin: 0;
     line-height: 100px;
     color: #fff;
+    margin: 0;
+
+    @media only screen and (max-width: 736px) {
+      font-size: 50px;
+    }
   }
 }

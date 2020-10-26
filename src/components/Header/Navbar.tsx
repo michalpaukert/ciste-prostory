@@ -1,48 +1,35 @@
 import React from "react";
 import "./Navbar.scss";
-import { Logo } from "../Logo/Logo";
-import { SidebarMenu } from "../sidebar-menu";
 import { Link } from "gatsby";
-import { Cards } from "../Card/Cards";
-import { HeaderTitle } from "./HeaderTitle";
 
 export const Navbar: React.FC = (props) => (
-  <div className="navbar">
-    <div className="uk-flex">
-      <div className="uk-width-1-2">
-        <Logo />
-      </div>
-      <div className="uk-width-1-2">
-        <div className="uk-flex uk-flex-right">
-          <div className="uk-flex uk-padding uk-padding-small">
-            <div className="uk-padding uk-padding-small">
-              <Link className="navbar__menu" to="/">
-                Uvod
-              </Link>
-            </div>
-
-            <div className="uk-padding uk-padding-small">
-              <Link className="navbar__menu navbar__menu--contact" to="/">
-                Kontakt
-              </Link>
-            </div>
-
-            <div className="uk-padding uk-padding-small">
-              <div
-                className="uk-button uk-button-default"
-                uk-toggle="target: #offcanvas-flip"
-              >
-                <div className="navbar__burger-menu" />
-              </div>
-            </div>
+  <nav
+    className="navbar uk-navbar-container uk-navbar-transparent"
+    uk-navbar="boundary-align: true; align: center;"
+  >
+    <div className="uk-navbar-right">
+      <div className="navbar__menu navbar-collapse uk-flex uk-flex-middle" id="navbar_collapse">
+        <ul className="uk-navbar-nav">
+          <li>
+            <Link className="navbar__menu-item" to="/">
+              Úvod
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="navbar__menu-item navbar__menu-item--rounded"
+              to="/"
+            >
+              Kontakt
+            </Link>
+          </li>
+        </ul>
+        <a className="uk-navbar-toggle dis-none h-40" id="navbar_toggle">
+          <div uk-toggle="target: #offcanvas-flip">
+            <i uk-icon="icon: menu; ratio: 2"></i>
           </div>
-        </div>
-        <SidebarMenu />
+        </a>
       </div>
     </div>
-
-    <HeaderTitle title="S DURAZEM" subtitle="na cistotu" />
-
-    <Cards />
-  </div>
+  </nav>
 );
