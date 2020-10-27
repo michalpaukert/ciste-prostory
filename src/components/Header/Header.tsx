@@ -5,8 +5,15 @@ import { SidebarMenu } from "../Sidebar/SidebarMenu";
 import { Cards } from "../Card/Cards";
 import { HeaderTitle } from "./HeaderTitle";
 import { Navbar } from "./Navbar";
+import { ICardProps } from "../Card/Card";
 
-export const Header: React.FC = (props) => (
+interface IHeaderProps {
+  title: string;
+  subtitle: string;
+  cards: ICardProps[];
+}
+
+export const Header: React.FC<IHeaderProps> = (props) => (
   <div className="header">
     <div className="uk-flex">
       <div className="uk-width-1-2">
@@ -18,8 +25,8 @@ export const Header: React.FC = (props) => (
       </div>
     </div>
 
-    <HeaderTitle title="S DURAZEM" subtitle="na cistotu" />
+    <HeaderTitle title={props.title} subtitle={props.subtitle} />
 
-    <Cards />
+    <Cards cards={props.cards} />
   </div>
 );

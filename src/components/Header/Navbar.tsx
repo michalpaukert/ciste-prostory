@@ -8,7 +8,10 @@ export const Navbar: React.FC = (props) => (
     uk-navbar="boundary-align: true; align: center;"
   >
     <div className="uk-navbar-right">
-      <div className="navbar__menu navbar-collapse uk-flex uk-flex-middle" id="navbar_collapse">
+      <div
+        className="navbar__menu navbar-collapse uk-flex uk-flex-middle"
+        id="navbar_collapse"
+      >
         <ul className="uk-navbar-nav">
           <li>
             <Link className="navbar__menu-item" to="/">
