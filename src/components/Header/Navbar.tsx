@@ -12,7 +12,7 @@ export const Navbar: React.FC = (props) => (
         className="navbar__menu navbar-collapse uk-flex uk-flex-middle"
         id="navbar_collapse"
       >
-        <ul className="uk-navbar-nav">
+        <ul className="uk-navbar-nav uk-visible@s">
           <li>
             <Link className="navbar__menu-item" to="/">
               Úvod
@@ -28,9 +28,7 @@ export const Navbar: React.FC = (props) => (
           </li>
         </ul>
         <a className="uk-navbar-toggle dis-none h-40" uk-navbar-toggle-icon id="navbar_toggle">
-          <div uk-toggle="target: #offcanvas-flip">
-            <i uk-icon="icon: menu; ratio: 2"></i>
-          </div>
+          <div uk-toggle="target: #offcanvas-flip" className="navbar__menu-item uk-navbar-toggle" data-uk-navbar-toggle-icon />
         </a>
       </div>
     </div>
