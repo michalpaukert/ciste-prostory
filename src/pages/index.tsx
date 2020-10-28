@@ -38,7 +38,7 @@ export const IndexPage: React.FC = () => {
   const itemElements = data.kontentItemHomepage.elements;
   const title = itemElements.title.value;
   const subtitle = itemElements.subtitle.value;
-  const article = itemElements.main_article.modular_content[0].elements;
+  const article = itemElements.main_article.value[0].elements;
 
   return (
     <Layout>
