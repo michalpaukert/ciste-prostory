@@ -4,11 +4,10 @@ import { ErrorMessage, Field, Form, Formik } from "formik"
 
 export const ContactForm = () => {
   const { executeRecaptcha } = useGoogleReCaptcha();
-  const siteKey = process.env.SITE_RECAPTCHA_KEY || '';
+  const siteKey = process.env.GATSBY_SITE_RECAPTCHA_KEY;
 
   return (
     <>
-      {JSON.stringify(process.env)}
       <GoogleReCaptchaProvider reCaptchaKey={siteKey}>
         <Formik
           initialValues={{
