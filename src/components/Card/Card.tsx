@@ -8,9 +8,9 @@ export interface ICardProps {
 }
 
 export const Card: React.FC<ICardProps> = (props) => (
-  <div className="uk-width-1-2 uk-width-1-3@m">
+  <div className="uk-width-1-2@s uk-width-1-3@m">
     <div className="card uk-card uk-card-default uk-text-center">
-      <img src={props.image} alt={props.title} />
+      <img src={props.image} alt={props.title} uk-img />
       <h2>{props.title}</h2>
       <span>{props.text}</span>
     </div>
