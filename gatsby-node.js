@@ -6,6 +6,7 @@
 
 const path = require(`path`);
 const Articles = path.resolve(`src/views/articles.tsx`);
+const Contact = path.resolve(`src/views/contact.tsx`);
 
 exports.createPages = ({ graphql, actions }) => {
   // Query for markdown nodes to use in creating pages.
@@ -16,6 +17,12 @@ exports.createPages = ({ graphql, actions }) => {
   createPage({
     path: "/clanky",
     component: Articles,
+    context: {},
+  });
+
+  createPage({
+    path: "/kontakt",
+    component: ContactPage,
     context: {},
   });
 };

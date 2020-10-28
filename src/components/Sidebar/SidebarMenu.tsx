@@ -22,7 +22,7 @@ export const SidebarMenu: React.FC = (props) => (
           <Link className="sidebar__menu-item uk-hidden@s" to="/">Úvod</Link>
         </li>
         <li>
-          <Link className="sidebar__menu-item uk-hidden@s" to="/">Kontakt</Link>
+          <Link className="sidebar__menu-item uk-hidden@s" to="/kontakt">Kontakt</Link>
         </li>
         <li>
           <Link className="sidebar__menu-item" to="/">Ciste prostory</Link>
