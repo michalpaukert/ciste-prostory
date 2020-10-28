@@ -29,6 +29,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        trackingId: `UA-168691054-1`,
+      },
+    },
+    {
       resolve: "@kentico/gatsby-source-kontent",
       options: {
         projectId: "578ff6c2-4bd7-00e6-ff5b-8be5749df64d", // Fill in your Project ID
