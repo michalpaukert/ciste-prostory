@@ -14,7 +14,7 @@ export const SidebarMenu: React.FC = (props) => (
       <button
         className="uk-offcanvas-close uk-icon uk-close"
         type="button"
-        uk-close
+        uk-close="true"
       />
 
       <ul className="sidebar__menu uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">

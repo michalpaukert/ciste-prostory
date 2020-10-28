@@ -1,32 +1,32 @@
-import React from "react"
-import { GoogleReCaptchaProvider, useGoogleReCaptcha } from "react-google-recaptcha-v3"
+import React, { useState } from "react"
+import { GoogleReCaptcha, GoogleReCaptchaProvider, useGoogleReCaptcha } from "react-google-recaptcha-v3"
 import { ErrorMessage, Field, Form, Formik } from "formik"
 
 export const ContactForm = () => {
-  const { executeRecaptcha } = useGoogleReCaptcha();
   const siteKey = process.env.GATSBY_SITE_RECAPTCHA_KEY;
+  const [token, setToken] = useState("");
 
   return (
     <>
       <GoogleReCaptchaProvider reCaptchaKey={siteKey}>
+        <GoogleReCaptcha onVerify={repatchaToken => setToken(repatchaToken)} />
         <Formik
           initialValues={{
             phone: '',
           }}
           validate={values => {
-            const errors = {phone: ''};
+            const errors = {};
             if (!values.phone) {
-              errors.phone = 'Prosím vyplňte telefon, abysme vám mohli zavolat.'
+              return { phone: 'Prosím vyplňte telefon, abysme vám mohli zavolat.' };
             }
             return errors;
           }}
-          onSubmit={async (values, actions) => {
-            if (!executeRecaptcha) {
+          onSubmit={(values, actions) => {
+            if (!token) {
+              console.log("Missing recaptcha token.");
               return;
             }
-            const result = await executeRecaptcha('homepage');
-            alert(JSON.stringify(values, null, 2));
-            actions.setSubmitting(false);
+
           }}
         >
           {() => (
