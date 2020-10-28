@@ -9,7 +9,7 @@ export const Contact: React.FC = (props) => (
           <h2 className="contact__form-title">Kontaktujte nás</h2>
           <hr />
           <div className="uk-flex uk-flex-middle">
-            <img src="images/mail.png" alt="mail" uk-img />
+            <img src="images/mail.png" alt="mail" />
             <a className="contact__form-mail" href="mailto:info@brnocreative">info@brnocreative</a>
           </div>
           <div className="contact__address">
