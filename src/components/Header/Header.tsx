@@ -2,15 +2,13 @@ import React from "react";
 import "./Header.scss";
 import { Logo } from "../Logo/Logo";
 import { SidebarMenu } from "../Sidebar/SidebarMenu";
-import { Cards } from "../Card/Cards";
+import { HeaderCards } from "../Card/HeaderCards";
 import { HeaderTitle } from "./HeaderTitle";
 import { Navbar } from "./Navbar";
-import { ICardProps } from "../Card/Card";
 
 interface IHeaderProps {
   title: string;
   subtitle: string;
-  cards: ICardProps[];
 }
 
 export const Header: React.FC<IHeaderProps> = (props) => (
@@ -27,6 +25,6 @@ export const Header: React.FC<IHeaderProps> = (props) => (
 
     <HeaderTitle title={props.title} subtitle={props.subtitle} />
 
-    <Cards cards={props.cards} />
+    <HeaderCards />
   </div>
 );
