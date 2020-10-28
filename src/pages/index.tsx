@@ -17,7 +17,7 @@ export const IndexPage: React.FC = () => {
             value
           }
           main_article {
-            modular_content {
+            value {
               ... on kontent_item_article {
                 elements {
                   text {
