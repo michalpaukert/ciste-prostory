@@ -20,7 +20,7 @@ interface ISEOProps {
   meta?: IMetaProps[];
 }
 
-export const MetaTags: React.FC<ISEOProps> = ({
+export const SEO: React.FC<ISEOProps> = ({
   description,
   title,
   lang,
@@ -57,7 +57,7 @@ export const MetaTags: React.FC<ISEOProps> = ({
   );
 };
 
-MetaTags.defaultProps = {
+SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,

@@ -1,9 +1,7 @@
-import * as React from "react";
-import { Layout } from "../components/Layout/Layout";
-import { MetaTags } from "../components/metaTags";
-import { MainArticle } from "../components/MainArticle";
-import { Header } from "../components/Header/Header";
-import { graphql, useStaticQuery } from "gatsby";
+import * as React from "react"
+import { MainArticle } from "../components/MainArticle"
+import { graphql, useStaticQuery } from "gatsby"
+import { MainLayout } from "../components/Layout/MainLayout"
 
 export const IndexPage: React.FC = () => {
   const data = useStaticQuery(graphql`
@@ -41,11 +39,13 @@ export const IndexPage: React.FC = () => {
   const article = itemElements.main_article.value[0].elements;
 
   return (
-    <Layout>
-      <MetaTags title="Home" />
-      <Header subtitle={subtitle} title={title} />
+    <MainLayout
+      title="Home"
+      heading={title}
+      subheading={subtitle}
+    >
       <MainArticle text={article.text.value} title={article.title.value} />
-    </Layout>
+    </MainLayout>
   );
 };
 

@@ -6,10 +6,10 @@ export const Contact: React.FC = (props) => (
     <div className="contact__wrapper uk-flex uk-flex-center">
       <div className="contact__form-wrapper">
         <div className="contact__form">
-          <h2 className="contact__form-title">Kontaktujte nas</h2>
+          <h2 className="contact__form-title">Kontaktujte nás</h2>
           <hr />
           <div className="uk-flex uk-flex-middle">
-            <img src="images/mail.png" alt="mail" />
+            <img src="images/mail.png" alt="mail" uk-img />
             <a className="contact__form-mail" href="mailto:info@brnocreative">info@brnocreative</a>
           </div>
           <div className="contact__address">

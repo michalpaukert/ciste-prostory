@@ -2,16 +2,9 @@ import React from "react";
 import "./Header.scss";
 import { Logo } from "../Logo/Logo";
 import { SidebarMenu } from "../Sidebar/SidebarMenu";
-import { HeaderCards } from "../Card/HeaderCards";
-import { HeaderTitle } from "./HeaderTitle";
 import { Navbar } from "./Navbar";
 
-interface IHeaderProps {
-  title: string;
-  subtitle: string;
-}
-
-export const Header: React.FC<IHeaderProps> = (props) => (
+export const Header: React.FC = (props) => (
   <div className="header">
     <div className="uk-flex">
       <div className="uk-width-1-2">
@@ -22,9 +15,6 @@ export const Header: React.FC<IHeaderProps> = (props) => (
         <SidebarMenu />
       </div>
     </div>
-
-    <HeaderTitle title={props.title} subtitle={props.subtitle} />
-
-    <HeaderCards />
+    {props.children}
   </div>
 );

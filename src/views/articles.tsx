@@ -1,8 +1,8 @@
-import * as React from "react";
-import { Layout } from "../components/Layout/Layout";
+import * as React from "react"
+import { ContentLayout } from "../components/Layout/ContentLayout"
 
 const Articles = () => {
-  return <Layout>Clanky</Layout>;
+  return <ContentLayout title="clanky">Clanky</ContentLayout>;
 };
 
 export default Articles;

@@ -27,7 +27,7 @@ export const Navbar: React.FC = (props) => (
             </Link>
           </li>
         </ul>
-        <a className="uk-navbar-toggle dis-none h-40" id="navbar_toggle">
+        <a className="uk-navbar-toggle dis-none h-40" uk-navbar-toggle-icon id="navbar_toggle">
           <div uk-toggle="target: #offcanvas-flip">
             <i uk-icon="icon: menu; ratio: 2"></i>
           </div>
