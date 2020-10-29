@@ -1,6 +1,6 @@
 import axios, {AxiosRequestConfig, AxiosResponse} from "axios";
 
-const apiClient = axios.create({
+const axiosClient = axios.create({
   baseURL: process.env.VUE_APP_API_URL,
   responseType: 'json',
   headers: {
@@ -10,12 +10,12 @@ const apiClient = axios.create({
 
 type RequestMethod = AxiosRequestConfig["method"];
 
-const performAuthenticatedRequest = async <T>(
+const performRequest = async <T>(
   method: RequestMethod,
   url: string,
   data?: object
 ): Promise<T> => {
-  const response = await apiClient({
+  const response = await axiosClient({
     url,
     data,
     method,
@@ -26,11 +26,13 @@ const performAuthenticatedRequest = async <T>(
   return response.data;
 };
 
-export const adminClient: AdminApiClient = {
-  get<T>(endpoint: string): Promise<T> {
-    return performAuthenticatedRequest("get", endpoint);
-  },
+interface ApiClient {
+  post<T>(endpoint: string, data?: object): Promise<T>;
+}
+
+export const apiClient: ApiClient = {
 
   post<T>(endpoint: string, data?: object): Promise<T> {
-    return performAuthenticatedRequest("post", endpoint, data);
+    return performRequest("post", endpoint, data);
   },
+}
