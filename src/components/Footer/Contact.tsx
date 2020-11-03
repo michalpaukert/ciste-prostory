@@ -16,7 +16,8 @@ export const Contact: React.FC = (props) => (
             <div>BRNO CREATIVE s.r.o.</div>
             <div>Lidicka 700/19</div>
             <div>60200 Brno</div>
-            <div>ICO: 07367066</div>
+            <div>IČO: 07367066</div>
+            <div>DIČ: CZ07367066</div>
           </div>
         </div>
       </div>

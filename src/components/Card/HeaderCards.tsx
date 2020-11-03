@@ -1,9 +1,10 @@
 import React from "react";
 import { Card } from "./Card";
 import { graphql, useStaticQuery } from "gatsby";
+import { HomeCardsQueryQuery } from "../../../graphql-types";
 
 export const HeaderCards: React.FC = () => {
-  const data = useStaticQuery(graphql`
+  const data = useStaticQuery<HomeCardsQueryQuery>(graphql`
     query HomeCardsQuery {
       allKontentItemCard {
         nodes {
@@ -32,14 +33,17 @@ export const HeaderCards: React.FC = () => {
         className="uk-grid uk-grid-small"
         uk-height-match="target: > div > .uk-card"
       >
-        {items.map((item: any, key: number) => {
+        {items.map((item, key) => {
           const card = item.elements;
+          const image = card?.type?.value && card?.type?.value[0]?.codename;
+          const title = card?.title?.value || "";
+          const text = card?.text?.value || "";
           return (
             <Card
               key={key}
-              image={`./images/${card.type.value[0].codename}.png`}
-              title={card.title.value}
-              text={card.text.value}
+              image={`./images/${image}.png`}
+              title={title}
+              text={text}
             />
           );
         })}

@@ -14,3 +14,12 @@
   color: #fff;
   min-width: 20px;
 }
+
+
+.content-layout {
+  &__image {
+    height: 773px;
+    background-image: url('/images/image-center.png');
+    background-size: cover;
+  }
+}

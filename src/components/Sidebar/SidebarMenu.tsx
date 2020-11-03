@@ -10,7 +10,7 @@ export const SidebarMenu: React.FC = (props) => (
     className="sidebar uk-offcanvas"
   >
     <div className="uk-offcanvas-bar">
-      <img src="images/logo_prostory.png" />
+      <img src="/images/logo-primary.png" />
       <button
         className="uk-offcanvas-close uk-icon uk-close"
         type="button"

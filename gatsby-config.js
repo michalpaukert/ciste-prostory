@@ -1,6 +1,7 @@
 require('dotenv').config()
 
 module.exports = {
+  pathPrefix: `/`,
   siteMetadata: {
     title: `Čisté prostory`,
     description: `Description`,
@@ -8,6 +9,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-sass`,
+    `gatsby-plugin-graphql-codegen`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
     {
