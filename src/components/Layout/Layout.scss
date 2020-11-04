@@ -18,8 +18,10 @@
 
 .content-layout {
   &__image {
-    height: 773px;
+    min-height: 250px;
+    max-height: 773px;
     background-image: url('/images/image-center.png');
+    background-repeat: no-repeat;
     background-size: cover;
   }
 }

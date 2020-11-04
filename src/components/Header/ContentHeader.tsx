@@ -5,7 +5,7 @@ import { SidebarMenu } from "../Sidebar/SidebarMenu";
 import { Navbar } from "./Navbar";
 
 export const ContentHeader: React.FC = (props) => (
-  <div className="header--secondary">
+  <div className="header header--secondary">
     <div className="uk-flex">
       <div className="uk-width-1-2">
         <Logo variant={LogoEnum.Secondary} />

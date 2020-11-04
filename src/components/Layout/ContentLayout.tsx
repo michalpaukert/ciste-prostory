@@ -29,11 +29,11 @@ export const ContentLayout: React.FC<IContentLayoutProps> = (props) => {
           <div className="uk-width-1-2">
           </div>
         </div>
-        <div className="content-layout content-layout__image" />
-        <div className="content-layout">
-          Tady je text
-        </div>
       </ContentHeader>
+      <div className="content-layout content-layout__image" />
+      <div className="content-layout">
+        Tady je text
+      </div>
       <main>{props.children}</main>
       <Footer />
     </>

@@ -1,18 +1,12 @@
 import React from "react";
 import "../Card/Card.scss";
-import { Link } from "gatsby";
 import "./SidebarMenu.scss";
-import UIkit from "uikit";
 
 export const SidebarMenu: React.FC = (props) => {
 
-  const closeSidebar = () => {
-    UIkit.offcanvas('#offcanvas-flip').hide();
-  }
-
   return (
     <div
-      id="offcanvas-flip"
+      id="sidebar"
       uk-offcanvas="flip: true; overlay: true"
       className="sidebar uk-offcanvas"
     >
@@ -26,16 +20,13 @@ export const SidebarMenu: React.FC = (props) => {
 
         <ul className="sidebar__menu uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
           <li>
-            <Link className="sidebar__menu-item uk-hidden@s" to="/" onClick={closeSidebar}>Úvod</Link>
+            <a className="sidebar__menu-item uk-hidden@s" href="/">Úvod</a>
           </li>
           <li>
-            <Link className="sidebar__menu-item uk-hidden@s" to="/kontakt" onClick={closeSidebar}>Kontakt</Link>
+            <a className="sidebar__menu-item uk-hidden@s" href="/kontakt">Kontakt</a>
           </li>
           <li>
-            <Link className="sidebar__menu-item" to="/" onClick={closeSidebar}>Ciste prostory</Link>
-          </li>
-          <li>
-            <Link className="sidebar__menu-item" to="/" onClick={closeSidebar}>Ciste prostory</Link>
+            <a className="sidebar__menu-item" href="/">Čisté prostory</a>
           </li>
         </ul>
       </div>

@@ -4,11 +4,10 @@
   background-repeat: no-repeat;
   background-size: 100% 56%;
   background-color: #f4f4f5;
+  background-position: top right;
 
   &--secondary {
-    background-image: url('/images/pozadi.png');
     background-size: 70%;
-    background-repeat: no-repeat;
-    background-position: right;
+    min-height: 40vw;
   }
 }

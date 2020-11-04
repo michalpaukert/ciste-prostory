@@ -1,17 +1,20 @@
-import React, { useState } from "react"
-import { GoogleReCaptcha, GoogleReCaptchaProvider, useGoogleReCaptcha } from "react-google-recaptcha-v3"
-import { ErrorMessage, Field, Form, Formik } from "formik"
-import { apiClient } from "../../api/apiClient"
+import React from "react";
+import { ErrorMessage, Field, Form, Formik } from "formik";
+import { apiClient } from "../../api/apiClient";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export const ContactForm = () => {
-  const siteKey = process.env.GATSBY_SITE_RECAPTCHA_KEY;
+  const siteKey = process.env.GATSBY_SITE_RECAPTCHA_KEY || "";
   const apiUrl = process.env.GATSBY_API_URL || "";
-  const [token, setToken] = useState("");
+  const recaptchaRef = React.createRef<ReCAPTCHA>();
 
   return (
     <>
-      <GoogleReCaptchaProvider reCaptchaKey={siteKey}>
-        <GoogleReCaptcha onVerify={repatchaToken => setToken(repatchaToken)} />
+      <ReCAPTCHA
+        ref={recaptchaRef}
+        size={"invisible"}
+        sitekey={siteKey}
+      />,
         <Formik
           initialValues={{
             phone: '',
@@ -23,7 +26,9 @@ export const ContactForm = () => {
             }
             return errors;
           }}
-          onSubmit={(values, actions) => {
+          onSubmit={async (values, actions) => {
+
+            const token = await recaptchaRef.current?.executeAsync();
             if (!token) {
               console.log("Missing recaptcha token.");
               return;
@@ -45,7 +50,6 @@ export const ContactForm = () => {
             </Form>
           )}
         </Formik>
-      </GoogleReCaptchaProvider>
     </>
   )
 }
