@@ -7,8 +7,7 @@ import UIkit from "uikit";
 export const SidebarMenu: React.FC = (props) => {
 
   const closeSidebar = () => {
-    // @ts-ignore
-    UIkit.offcanvas.hide();
+    UIkit.offcanvas('#offcanvas-flip').hide();
   }
 
   return (
