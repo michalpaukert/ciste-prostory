@@ -2,12 +2,19 @@
   background-image: url('/images/header.png');
   padding-bottom: 50px;
   background-repeat: no-repeat;
-  background-size: 100% 56%;
+  background-size: 100% 70%;
   background-color: #f4f4f5;
   background-position: top right;
 
+
   &--secondary {
-    background-size: 70%;
-    min-height: 40vw;
+    min-height: 640px;
+    padding-bottom: 0;
+    background-size: 70% 100%;
+    color: #fff;
+
+    @media only screen and (max-width: 1200px) {
+      background-size: 100%;
+    }
   }
 }

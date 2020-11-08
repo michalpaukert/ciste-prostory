@@ -18,10 +18,18 @@
 
 .content-layout {
   &__image {
-    min-height: 250px;
-    max-height: 773px;
+    max-height: 743px;
     background-image: url('/images/image-center.png');
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  &__header {
+    display: flex;
+
+
+    @media only screen and (max-width: 1200px) {
+      flex-direction: column;
+    }
   }
 }

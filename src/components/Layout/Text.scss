@@ -3,3 +3,10 @@
     color: #00abbb;
   }
 }
+
+.hr {
+  &--primary {
+    border-top: 1px solid #00abbb;
+
+  }
+}

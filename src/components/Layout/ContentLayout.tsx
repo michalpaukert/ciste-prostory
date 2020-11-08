@@ -21,20 +21,27 @@ export const ContentLayout: React.FC<IContentLayoutProps> = (props) => {
     <>
       <SEO title={props.title} />
       <ContentHeader>
-        <div className="uk-container uk-flex">
-          <div className="uk-width-1-2">
+        <div className="content-layout__header uk-padding-large">
+          <div className="uk-width-1-2@l">
             <h1 className="text--primary">Ciste prostory</h1>
-            <hr />
+            <hr className="hr--primary uk-width-1-3" />
           </div>
-          <div className="uk-width-1-2">
+          <div className="uk-width-1-2@l">
+            <div className="uk-align-center">
+              <img className="uk-align-center" src="/images/home-secondary.png" alt="home" />
+            </div>
+            <div>
+            Provadime kompletni dodavky a montaz vzduchotechniky, vzduchotechnickych filtru vcetne filtru atypickych delanych na miru dle potreb zakaznika.
+            Dodavky a montaz vsech vzduchotechnickych a klimatizacnich komponentu likvidaci starych a pouzitych filtru.
+            Uvedeni zarizeni do provozu vcetne zpracovani prislusnych dokladu pro kolaudaci a naslednou validaci vsechny opravy stavajicich vzduchotechnickych rozvodu a potrubi kompletni poradenskou cinnost ohledne vzduchotechniky.
+            </div>
           </div>
         </div>
       </ContentHeader>
       <div className="content-layout content-layout__image" />
       <div className="content-layout">
-        Tady je text
       </div>
-      <main>{props.children}</main>
+      <main className="uk-flex uk-padding-large">{props.children}</main>
       <Footer />
     </>
   );
