@@ -1,10 +1,13 @@
 .header {
-  background-image: url('/images/header.png');
-  padding-bottom: 50px;
   background-repeat: no-repeat;
-  background-size: 100% 70%;
   background-color: #f4f4f5;
-  background-position: top right;
+
+  &--primary {
+    background-image: url('/images/header.png');
+    background-size: 100% 70%;
+    background-position: top right;
+    background-color: #f4f4f5;
+  }
 
 
   &--secondary {
@@ -12,8 +15,13 @@
     padding-bottom: 0;
     background-size: 70% 100%;
     color: #fff;
+    background-image: url('/images/header-secondary.png');
+    background-color: #fff;
+    background-position: top right;
 
     @media only screen and (max-width: 1200px) {
+      background: rgb(255,255,255);
+      background: linear-gradient(140deg, rgba(255,255,255,1) 0%, rgba(110,218,228,1) 41%, rgba(0,171,187,1) 66%, rgba(60,160,178,1) 100%);
       background-size: 100%;
     }
   }

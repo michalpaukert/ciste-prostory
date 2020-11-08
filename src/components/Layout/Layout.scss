@@ -18,7 +18,7 @@
 
 .content-layout {
   &__image {
-    max-height: 743px;
+    min-height: 543px;
     background-image: url('/images/image-center.png');
     background-repeat: no-repeat;
     background-size: cover;
