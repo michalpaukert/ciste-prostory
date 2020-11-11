@@ -23,8 +23,8 @@ export const ContentLayout: React.FC<IContentLayoutProps> = (props) => {
       <ContentHeader>
         <div className="content-layout__header uk-padding-large">
           <div className="uk-width-1-2@l">
-            <h1 className="text--primary">Ciste prostory</h1>
-            <hr className="hr--primary uk-width-1-3" />
+            <h1 className="content-layout__header-text">Čisté prostory</h1>
+            <hr className="content-layout__header-hr uk-width-1-4" />
           </div>
           <div className="uk-width-1-2@l">
             <div className="uk-align-center">

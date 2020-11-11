@@ -32,4 +32,20 @@
       flex-direction: column;
     }
   }
+
+  &__header-text {
+    color: #00ABBB;
+
+    @media only screen and (max-width: 1200px) {
+      color: #fff;
+    }
+  }
+
+  &__header-hr {
+    border-top: 1px solid #00abbb;
+
+    @media only screen and (max-width: 1200px) {
+      border-top: 1px solid #fff;
+    }
+  }
 }

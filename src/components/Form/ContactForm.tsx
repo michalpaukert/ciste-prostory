@@ -1,13 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import { apiClient } from "../../api/apiClient";
 import ReCAPTCHA from "react-google-recaptcha";
 import "./ContactForm.scss";
+import Modal from "react-modal";
 
 export const ContactForm = () => {
   const siteKey = process.env.GATSBY_SITE_RECAPTCHA_KEY || "";
   const apiUrl = process.env.GATSBY_API_URL || "";
   const recaptchaRef = React.createRef<ReCAPTCHA>();
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+
+  function closeModal(){
+    setIsOpen(false);
+  }
+
+  Modal.setAppElement('#___gatsby');
+
+  const customStyles = {
+    content : {
+      top: '50%',
+      left: '50%',
+      right: 'auto',
+      bottom: 'auto',
+      marginRight: '-50%',
+      transform: 'translate(-50%, -50%)',
+      width: '50%',
+      position: 'fixed'
+    }
+  };
 
   return (
     <div className="uk-container">
@@ -40,6 +61,8 @@ export const ContactForm = () => {
               token
             }
             await apiClient.post(apiUrl, payload);
+            actions.resetForm({})
+            setIsOpen(true);
           }}
         >
           {() => (
@@ -57,6 +80,25 @@ export const ContactForm = () => {
             </Form>
           )}
         </Formik>
+
+      <Modal
+        isOpen={modalIsOpen}
+        shouldCloseOnEsc={true}
+        onRequestClose={closeModal}
+        style={customStyles}
+        contentLabel="Modal"
+        overlayClassName="consultation__overlay"
+        parentSelector={() => document.body}
+      >
+        <div className="uk-modal-container">
+            <h2>Zavoláme vám</h2>
+            <button className="uk-modal-close-default uk-icon uk-close" type="button" uk-close="" onClick={closeModal}>
+            </button>
+          <p>
+            Vaše telefoní číslo bylo předáno a budeme vás v nejbližším možném termínu kontaktovat.
+          </p>
+        </div>
+      </Modal>
     </div>
   );
 };
