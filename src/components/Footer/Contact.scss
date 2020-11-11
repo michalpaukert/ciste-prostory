@@ -1,5 +1,8 @@
 .contact {
   background-color: #00ABBB;
+  @media only screen and (max-width: 1000px) {
+    height: 250px;
+  }
 
   &__wrapper {
     background-color: #00ABBB;
