@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import { apiClient } from "../../api/apiClient";
 import ReCAPTCHA from "react-google-recaptcha";
@@ -59,10 +59,10 @@ export const ContactForm = () => {
               token
             };
 
-            await apiClient.post(apiUrl, payload);
-
-            actions.resetForm({});
             setIsOpen(true);
+            await apiClient.post(apiUrl, payload);
+            actions.resetForm({});
+
           }}
         >
           {() => (
