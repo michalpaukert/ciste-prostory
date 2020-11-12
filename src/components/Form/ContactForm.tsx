@@ -11,11 +11,9 @@ export const ContactForm = () => {
   const recaptchaRef = React.createRef<ReCAPTCHA>();
   const [modalIsOpen, setIsOpen] = React.useState(false);
 
-  function closeModal(){
+  const closeModal = () => {
     setIsOpen(false);
   }
-
-  Modal.setAppElement('#___gatsby');
 
   const customStyles = {
     content : {
@@ -52,16 +50,18 @@ export const ContactForm = () => {
 
             const token = await recaptchaRef.current?.executeAsync();
             if (!token) {
-              console.log("Missing recaptcha token.");
+              console.error("Missing recaptcha token.");
               return;
             }
 
             const payload = {
               phone: values.phone,
               token
-            }
+            };
+
             await apiClient.post(apiUrl, payload);
-            actions.resetForm({})
+
+            actions.resetForm({});
             setIsOpen(true);
           }}
         >
