@@ -28,7 +28,7 @@ export const HeaderCards: React.FC = () => {
   const items = data.allKontentItemCard.nodes;
 
   return (
-    <div className="uk-container uk-container-small">
+    <div className="uk-padding-small uk-container uk-container-small">
       <div
         className="uk-grid uk-grid-small"
         uk-height-match="target: > div > .uk-card"
