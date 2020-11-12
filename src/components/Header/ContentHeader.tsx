@@ -7,7 +7,7 @@ import { useWindowWidth } from "../../hooks/windowSize";
 
 export const ContentHeader: React.FC = (props) => {
   const width = useWindowWidth();
-  const logoType = width > 1200 ? LogoEnum.Secondary : LogoEnum.Primary;
+  const logoType = width < 1200 ? LogoEnum.Primary : LogoEnum.Secondary;
   return (
     <div className="header header--secondary">
       <div className="uk-flex">
