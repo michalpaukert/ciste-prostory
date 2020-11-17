@@ -38,7 +38,6 @@ export const ContentLayout: React.FC<IContentLayoutProps> = (props) => {
           </div>
         </div>
       </ContentHeader>
-      <div className="content-layout content-layout__image" />
       <div className="content-layout">
       </div>
       <main className="uk-flex uk-padding-large">{props.children}</main>
