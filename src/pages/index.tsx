@@ -47,7 +47,6 @@ export const IndexPage: React.FC = () => {
       heading={title}
       subheading={subtitle}
     >
-      <MainArticle text={articleText} title={articleTitle} />
     </MainLayout>
   );
 };
