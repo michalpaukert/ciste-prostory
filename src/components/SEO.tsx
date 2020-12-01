@@ -36,10 +36,6 @@ export const SEO: React.FC<ISEOProps> = ({
       link={[
         {
           rel: "stylesheet",
-          href: "https://fonts.googleapis.com/css?family=Staatliches",
-        },
-        {
-          rel: "stylesheet",
           href:
             "https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/css/uikit.min.css",
         },
@@ -47,18 +43,14 @@ export const SEO: React.FC<ISEOProps> = ({
       script={[
         {
           src: "https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit.min.js",
-        },
-        {
-          src:
-            "https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit-icons.min.js",
-        },
+        }
       ]}
     />
   );
 };
 
 SEO.defaultProps = {
-  lang: `en`,
+  lang: `cs`,
   meta: [],
   description: ``,
 };
