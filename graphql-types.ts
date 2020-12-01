@@ -1351,6 +1351,7 @@ export type Kontent_Item_ArticleFieldsEnum =
   | 'system___last_modified'
   | 'system___name'
   | 'system___type'
+  | 'system___collection'
   | 'elements___text___name'
   | 'elements___text___type'
   | 'elements___text___value'
@@ -1555,6 +1556,7 @@ export type Kontent_Item_CardFieldsEnum =
   | 'system___last_modified'
   | 'system___name'
   | 'system___type'
+  | 'system___collection'
   | 'elements___title___name'
   | 'elements___title___type'
   | 'elements___title___value'
@@ -1721,6 +1723,7 @@ export type Kontent_Item_Contact_PageFieldsEnum =
   | 'system___last_modified'
   | 'system___name'
   | 'system___type'
+  | 'system___collection'
   | 'preferred_language'
   | 'id'
   | 'parent___id'
@@ -1914,6 +1917,7 @@ export type Kontent_Item_HomepageFieldsEnum =
   | 'system___last_modified'
   | 'system___name'
   | 'system___type'
+  | 'system___collection'
   | 'elements___metadata__title___name'
   | 'elements___metadata__title___type'
   | 'elements___metadata__title___value'
@@ -2142,6 +2146,7 @@ export type Kontent_Item_NavigationFieldsEnum =
   | 'system___last_modified'
   | 'system___name'
   | 'system___type'
+  | 'system___collection'
   | 'elements___icon___name'
   | 'elements___icon___type'
   | 'elements___icon___value'
@@ -2334,6 +2339,7 @@ export type Kontent_Item_System = {
   last_modified: Scalars['Date'];
   name: Scalars['String'];
   type: Scalars['String'];
+  collection?: Maybe<Scalars['String']>;
 };
 
 
@@ -2351,6 +2357,7 @@ export type Kontent_Item_SystemFilterInput = {
   last_modified?: Maybe<DateQueryOperatorInput>;
   name?: Maybe<StringQueryOperatorInput>;
   type?: Maybe<StringQueryOperatorInput>;
+  collection?: Maybe<StringQueryOperatorInput>;
 };
 
 export type Kontent_Item_Taxonomy_Element = {
@@ -2418,6 +2425,7 @@ export type Kontent_ItemFieldsEnum =
   | 'system___last_modified'
   | 'system___name'
   | 'system___type'
+  | 'system___collection'
   | 'preferred_language';
 
 export type Kontent_ItemFilterInput = {

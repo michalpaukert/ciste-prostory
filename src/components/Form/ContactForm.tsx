@@ -68,11 +68,13 @@ export const ContactForm = () => {
           {() => (
             <Form className="uk-container">
               <div className="consultation uk-padding-small">
-                <h3 className="consultation__header">Konzultace je zdarma</h3>
                 <hr className="hr--primary consultation__header uk-width-1-2" />
                 <div className="consultation__form">
-                  <label htmlFor="phone">Nechte nam sve telefonni cislo. Zavolame vam a domluvime si vhodny termin.</label>
-                  <Field className="consultation__form-input" type="tel" name="phone" placeholder="Vase telefonni cislo" />
+                  <label htmlFor="phone">Nechte nám své telefonní číslo. Zavoláme vám a domluvíme si vhodný termín.</label>
+                  <Field className="consultation__form-input consultation__form-input--left" type="tel" name="phone" placeholder="Telefon:" />
+                  <Field className="consultation__form-input consultation__form-input--left" type="email" name="email" placeholder="Email:" />
+                  <Field className="consultation__form-input consultation__form-input--left" type="text" name="jmeno" placeholder="Jméno:" />
+                  <Field className="consultation__form-text consultation__form-input--left" rows={3} type="textarea" name="text" placeholder="Prosím formulujte dotaz" />
                   <ErrorMessage name="phone" />
                   <button type="submit" className="consultation__form-submit">Odeslat zpravu</button>
                 </div>

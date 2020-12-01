@@ -1,6 +1,6 @@
 .consultation {
   border: 1px solid #00ABBB;
-  font-size: 16px;
+  font-size: 20px;
 
   display: flex;
   flex-direction: column;
@@ -36,6 +36,26 @@
     padding: 10px 50px;
     margin-top: 10px;
     text-align: center;
+    font-size: 16px;
+
+    &--left {
+      text-align: left;
+    }
+
+    &:focus {
+      border: 1px solid #00abbb;
+      outline: none;
+    }
+  }
+
+  &__form-text {
+    border-radius: 40px;
+    color: #00ABBB;
+    border: 1px solid #00abbb;
+    padding: 10px 50px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
 
     &:focus {
       border: 1px solid #00abbb;
